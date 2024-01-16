@@ -1,0 +1,41 @@
+StackL:
+<BoxL>:
+    orientation:"vertical"
+    
+    Button:
+        text:"Click Picture"
+        size_hint: .5,.5
+        pos_hint:{"center_x":.5}
+        #pos_hint:{"center_y":.5}
+    
+    Button:
+        text:"Stress Measure"
+    Button:
+        text:"Suggestion"
+    Button:
+        text:"Medical Prediction"
+    Button:
+        text:"Rate us"
+<StackL>:
+    orientation: "lr-bt"
+    spacing:"5dp","5dp"
+    padding: ("30dp","0dp","40dp","30dp")
+    Button:
+        text:"Measure Stress"
+        size_hint:.25,.1
+    Button:
+        text: "More Suggestion"
+        size_hint:.25,.1
+    Button:
+        text:"Medical Prediction"
+        size_hint:.25,.1
+    Button:
+        text:"Rate Us"
+        size_hint:.25,.1
+    Button:
+        text: "Take Picture"
+        size_hint: 1,0.1
+<ScrollV>:
+    StackL:
+        size_hint:1,None
+        height:self.minimum_height
